@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Slide</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="brand">Cinema</a>
+
+        <div class="menu-btn">
+        </div>
+
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Explore</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+
+        <video class="video-slide active" src="Clips/Inception Final.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Clips/Avatar final.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Clips/Interstellar  Final.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Clips/Titanic final.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Clips/Matrix final.mp4" autoplay muted loop></video>
+
+        <div class="content active">
+            <h1>Inception. <br> <span>Action/Sci-fi</span></h1>
+            <p>Inception is a 2010 science fiction action film written and directed by Christopher Nolan.<br> Dom Cobb (Leonardo DiCaprio) is a thief with the rare ability to enter people's dreams and steal their secrets from their subconscious. His skill has made him a hot commodity in the world of corporate espionage but has also cost him everything he loves. Cobb gets a chance at redemption when he is offered a seemingly impossible task: Plant an idea in someone's mind. If he succeeds, it will be the perfect crime, but a dangerous enemy anticipates Cobb's every move.</p>
+            <a href="https://play.google.com/store/movies/details?id=VDVz53M2kJs.P&pli=1">Watch Now</a>
+        </div>
+        <div class="content">
+            <h1>Avatar. <br> <span>Sci-fi/Action</span></h1>
+            <p> The Way of Water is a 2022 American epic science fiction film co-produced and directed by James Cameron, who co-wrote the screenplay with Rick Jaffa and Amanda Silver from a story the trio wrote with Josh Friedman and Shane Salerno.<br> Jake Sully and Ney'tiri have formed a family and are doing everything to stay together. However, they must leave their home and explore the regions of Pandora. When an ancient threat resurfaces, Jake must fight a difficult war against the humans.</p>
+            <a href="https://play.google.com/store/movies/details?id=E47cmuQN7NY.P">Watch Now</a>
+        </div>
+        <div class="content">
+            <h1>Interstellar. <br> <span>Drama/Sci-fi</span></h1>
+            <p>Inception is a 2010 science fiction action film written and directed by Christopher Nolan.<br> In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole. But first, Brand must send former NASA pilot Cooper (Matthew McConaughey) and a team of researchers through the wormhole and across the galaxy to find out which of three planets could be mankind's new home.</p>
+            <a href="https://play.google.com/store/movies/details?id=vrjPsQYHU1c">Watch Now</a>
+        </div>
+        <div class="content">
+            <h1>Titanic. <br> <span>Drama/Romance</span></h1>
+            <p>Titanic is a 1997 American disaster film directed, written, produced, and co-edited by James Cameron. <br> James Cameron's "Titanic" is an epic, action-packed romance set against the ill-fated maiden voyage of the R.M.S. Titanic; the pride and joy of the White Star Line and, at the time, the largest moving object ever built. She was the most luxurious liner of her era -- the "ship of dreams" -- which ultimately carried over 1,500 people to their death in the ice cold waters of the North Atlantic in the early hours of April 15, 1912.</p>
+            <a href="https://play.google.com/store/movies/details?id=lqUflgBVGMQ.P">Watch Now</a>
+        </div>
+        <div class="content">
+            <h1>The Matrix. <br> <span>Action/Sci-fi</span></h1>
+            <p>The Matrix is a 1999 science fiction action film written and directed by the Wachowskis. <br> Neo (Keanu Reeves) believes that Morpheus (Laurence Fishburne), an elusive figure considered to be the most dangerous man alive, can answer his question -- What is the Matrix? Neo is contacted by Trinity (Carrie-Anne Moss), a beautiful stranger who leads him into an underworld where he meets Morpheus. They fight a brutal battle for their lives against a cadre of viciously intelligent secret agents. It is a truth that could cost Neo something more precious than his life.</p>
+            <a href="https://play.google.com/store/movies/details?id=1kpEhLJKNIM.P">Watch Now</a>
+        </div>
+        <div class="media-icons">
+            <a href="https://www.facebook.com/profile.php?id=100090791544825"><i class="ri-facebook-line"></i></a>
+            <a href="https://instagram.com/breathing_pencils?igshid=OGQ5ZDc2ODk2ZA=="><i class="ri-instagram-line"></i></a>
+            <a href="https://github.com/Mrvikas2002/vikas-website"><i class="ri-github-line"></i></a>
+        </div>
+
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+ <!-- Using JavaScript for responsive navigation menu-->
+    <script type="text/javascript">
+
+        //toggle button
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        //video slider
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+
+        var sliderNav = function(manual) {
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            });
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            })
+        })
+    </script>
+</body>
+</html>
